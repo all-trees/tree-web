@@ -6,6 +6,7 @@ import nl.dvberkel.svg.SvgTreeTransformer;
 import nl.dvberkel.tree.TreeTransformer;
 import nl.dvberkel.tree.Configuration;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 
 import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerConfigurationException;
@@ -14,6 +15,7 @@ import javax.xml.transform.TransformerFactory;
 import static nl.dvberkel.tree.Configuration.configuration;
 
 @org.springframework.context.annotation.Configuration
+@ComponentScan(basePackages = {"nl.dvberkel.controller"})
 public class TreeContextConfiguration {
     @Bean
     public Builder createBuilder() {
