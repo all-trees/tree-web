@@ -20,7 +20,7 @@ public class ApplicationContextTest {
 
     @Before
     public void createApplicationContext() {
-        context = new AnnotationConfigApplicationContext(ContextConfiguration.class);
+        context = new AnnotationConfigApplicationContext(TreeContextConfiguration.class);
     }
 
     @Test

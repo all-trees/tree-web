@@ -14,7 +14,7 @@ import javax.xml.transform.TransformerFactory;
 import static nl.dvberkel.tree.Configuration.configuration;
 
 @org.springframework.context.annotation.Configuration
-public class ContextConfiguration {
+public class TreeContextConfiguration {
     @Bean
     public Builder createBuilder() {
         return new Builder(createChecker());
